@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link href="./style/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="drawer px-0 md:px-20 bg-white shadow-lg fixed top-0 z-50">
+      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col">
+        <!-- Navbar -->
+        <div class="navbar w-full">
+          <div class="flex-1">
+            <img src="./asset/logo.svg" class="w-44 md:w-[214]" />
+          </div>
+          <div class="hidden flex-none lg:block">
+            <ul class="menu menu-horizontal">
+              <!-- Navbar menu content here -->
+              <li
+                class="text-xl text-black font-extrabold cursor-pointer hover:text-[#30A9FE]"
+              >
+                <a href="index.html">Beranda</a>
+              </li>
+              <li
+                class="text-xl text-black font-extrabold cursor-pointer hover:text-[#30A9FE]"
+              >
+                <a href="product.html">Produk</a>
+              </li>
+            </ul>
+            <button
+              class="btn border-2 border-[#333333] bg-transparent rounded-full hover:bg-[#333333] hover:text-white"
+            >
+              Konsultasi
+            </button>
+          </div>
+          <div class="flex-none lg:hidden">
+            <label
+              for="my-drawer-3"
+              aria-label="open sidebar"
+              class="btn btn-square btn-ghost"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-6 w-6 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-side">
+        <label
+          for="my-drawer-3"
+          aria-label="close sidebar"
+          class="drawer-overlay"
+        ></label>
+        <ul class="menu bg-white min-h-full w-80 p-4">
+          <!-- Sidebar content here -->
+          <li
+            class="text-xl text-black font-extrabold cursor-pointer hover:text-[#30A9FE]"
+          >
+            <a href="index.html">Beranda</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <section class="p-4 md:p-20 my-20 min-h-screen">
+        <h1
+          class="font-semibold text-[#333333] text-2xl md:text-4xl text-center"
+        >
+          Lading page para petarung baterai A2 dengan full power
+        </h1>
+        <div class="flex justify-center mt-10 mb-12 md:mt-32 md:mb-24">
+          <img src="./asset/detail.jpg" class="w-full md:w-6/12" />
+        </div>
+        <p
+          class="font-normal text-[#333333] text-base leading-tight py-3 md:py-5 text-justify"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis
+          sagittis elit, vitae fringilla justo maximus ac. Praesent rutrum ante
+          dolor, ac placerat nibh pulvinar at. Fusce at gravida risus, id
+          pulvinar arcu. Etiam faucibus gravida massa ut tristique. Cras in
+          dictum libero. Suspendisse ultrices egestas leo eu molestie.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Nullam ornare at lacus non rhoncus. Fusce lorem
+          justo, blandit ac interdum at, varius vitae dui. Cras malesuada quam
+          ut sollicitudin convallis. Vestibulum tempus ultrices aliquet. Donec
+          ac placerat sapien. Nulla facilisi. Fusce sagittis tellus ut est
+          consectetur, at tristique sem dapibus. Donec congue cursus urna a
+          laoreet. Vivamus augue ipsum, laoreet sit amet lobortis ut, gravida
+          sit amet dolor. In convallis bibendum nisi, ut aliquet ipsum euismod
+          sit amet. Morbi eget mi vel urna semper pellentesque. Vestibulum
+          dapibus ex nisl, at pellentesque tellus placerat vitae. Vestibulum non
+          lacus in dolor pretium volutpat. Suspendisse quis nibh a elit eleifend
+          mollis a eu lorem. Vivamus vulputate, metus non faucibus egestas,
+          velit odio viverra nibh, vitae vulputate enim turpis eu risus.
+          Curabitur dolor mi, iaculis eget porta a, laoreet et ligula. Cras et
+          felis sapien. Proin tincidunt blandit est, ut bibendum mauris faucibus
+          fermentum. Etiam convallis aliquet suscipit. Ut lobortis eleifend
+          felis sit amet pellentesque. Quisque aliquet rutrum libero, sed
+          accumsan erat tincidunt non. Vivamus ornare odio eget dui venenatis,
+          vitae egestas arcu molestie. Duis fringilla tincidunt enim, nec
+          commodo nunc pulvinar ut. Aliquam erat volutpat. Suspendisse potenti.
+          Etiam sed sapien vitae urna maximus vestibulum. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Suspendisse egestas lobortis accumsan. Suspendisse potenti. Duis sem
+          quam, hendrerit eu molestie a, commodo cursus lorem. Nam mattis nisi
+          nec dui luctus imperdiet. Aliquam convallis tellus in semper
+          scelerisque. Vivamus fringilla et odio nec bibendum. Nulla gravida dui
+          a feugiat convallis. Phasellus congue tortor sed arcu pretium commodo.
+          Integer finibus id sapien tincidunt dictum. Nam sed ligula nec ligula
+          eleifend hendrerit id at diam. Phasellus ornare commodo tellus, a
+          luctus orci semper in. Nullam venenatis sollicitudin nunc quis
+          ultricies. Nam commodo vel arcu ac consequat. Aenean tristique iaculis
+          dui, id sodales ante sagittis eu. Ut posuere laoreet diam, elementum
+          varius sem fringilla fringilla. Etiam gravida neque sit amet turpis
+          cursus gravida. Ut vel lectus lectus. Fusce magna turpis, tempus at
+          sem sed, pulvinar auctor urna. Quisque pulvinar posuere lectus quis
+          consectetur. Aliquam vehicula fermentum lacus non sodales. Aenean at
+          quam euismod, pulvinar nisi vel, auctor lectus. Fusce non feugiat
+          felis. Etiam porttitor neque lorem, at vulputate erat suscipit vitae.
+          Duis ut eros vel justo egestas viverra a sed quam. Vestibulum
+          fermentum ullamcorper purus. Quisque posuere eu est in laoreet. Fusce
+          tellus erat, pharetra vel molestie id, ullamcorper a risus. Integer
+          nisi enim, tempor sit amet nulla vel, faucibus lobortis ante. Donec
+          volutpat tellus sed sem vulputate mollis eu sed ligula. Aenean gravida
+          tellus eget suscipit porta.
+        </p>
+
+        <div class="flex items-center justify-center mt-10 md:mt-28">
+          <a
+            class="kustom-neu px-5 py-3 bg-[#333333] hover:scale-105 text-white border border-[#333333] hover:bg-white hover:text-[#333333] hover:border-orange-400 rounded-2xl cursor-pointer"
+            >Pesan Sekarang</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#333333] p-4 md:p-20">
+      <div class="flex flex-col md:flex-row my-5 gap-3 md:gap-5">
+        <div class="w-full md:w-1/3">
+          <img src="./asset/logolight.svg" />
+          <p class="font-normal text-white text-base leading-tight py-5">
+            Tmplate programmer adalah sebuah bisnis dibidang jasa pembuatan
+            landing page yang terjangkau dengan keperluan membantu pelaku usaha
+            yang go digital. Part of programmer magang.
+          </p>
+          <div class="flex flex-row gap-5">
+            <i
+              class="border border-white rounded-full p-3 fa-brands fa-facebook-f text-white text-3xl"
+            ></i>
+            <i
+              class="border border-white rounded-full p-3 fa-brands fa-instagram text-white text-3xl"
+            ></i>
+            <i
+              class="border border-white rounded-full p-3 fa-brands fa-youtube text-white text-3xl"
+            ></i>
+          </div>
+        </div>
+
+        <div class="w-1/3">
+          <h1 class="font-medium text-white text-2xl">Quick Links</h1>
+          <ul class="text-white py-3 flex flex-col gap-3">
+            <li><a href="">Beranda</a></li>
+            <li><a href="">Produk Kami</a></li>
+            <li><a href="">Harga</a></li>
+            <li><a href="">Kontak Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/3">
+          <h1 class="font-medium text-white text-2xl">Contact Us</h1>
+          <ul class="text-white py-3 flex flex-col gap-3">
+            <li>
+              <a href=""
+                ><i class="fa-regular fa-envelope mr-2"></i>
+                programmermagang@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-location-dot mr-2"></i>Rajabasa, Bandar
+                Lampung, Lampung, Indonesia.</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-phone mr-2"></i>+6285156296066</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-[#333333]">
+      <hr class="w-full" />
+      <p
+        class="font-normal text-white text-base leading-tight py-5 text-center"
+      >
+        Ⓒ 2023 All rights reserved. Tmplate Programmer
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>

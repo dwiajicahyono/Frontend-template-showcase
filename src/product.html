@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link href="./style/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="drawer px-0 md:px-20 bg-white shadow-lg fixed top-0 z-50">
+      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col">
+        <!-- Navbar -->
+        <div class="navbar w-full">
+          <div class="flex-1">
+            <img src="./asset/logo.svg" class="w-44 md:w-[214]" />
+          </div>
+          <div class="hidden flex-none lg:block">
+            <ul class="menu menu-horizontal">
+              <!-- Navbar menu content here -->
+              <li
+                class="text-xl text-black font-extrabold cursor-pointer hover:text-[#30A9FE]"
+              >
+                <a href="index.html">Beranda</a>
+              </li>
+            </ul>
+            <button
+              class="btn border-2 border-[#333333] bg-transparent rounded-full hover:bg-[#333333] hover:text-white"
+            >
+              Konsultasi
+            </button>
+          </div>
+          <div class="flex-none lg:hidden">
+            <label
+              for="my-drawer-3"
+              aria-label="open sidebar"
+              class="btn btn-square btn-ghost"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-6 w-6 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-side">
+        <label
+          for="my-drawer-3"
+          aria-label="close sidebar"
+          class="drawer-overlay"
+        ></label>
+        <ul class="menu bg-white min-h-full w-80 p-4">
+          <!-- Sidebar content here -->
+          <li
+            class="text-xl text-black font-extrabold cursor-pointer hover:text-[#30A9FE]"
+          >
+            <a href="index.html">Beranda</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <section class="p-4 md:p-20 my-20">
+        <h1 class="font-semibold text-[#333333] text-2xl md:text-4xl">
+          Produk Kami
+        </h1>
+        <p
+          class="font-normal text-[#333333] text-base leading-tight py-3 md:py-5"
+        >
+          Berikut ini adalah kata mereka yang sudah menggunakan jasa<br
+            class="md:block hidden"
+          />kami yang telah membantu mereka untuk berkembang !
+        </p>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-5 justify-center"
+        >
+          <!-- Product Card -->
+          <div
+            class="flex flex-col w-full md:w-64 p-3 md:p-5 border border-transparent bg-white shadow-xl rounded-xl hover:border hover:border-green-300 hover:shadow-inner hover:transition-transform"
+          >
+            <div class="w-full md:h-44 items-center flex justify-center">
+              <img src="./asset/productimage.svg" class="w-full" />
+            </div>
+
+            <h1
+              class="font-semibold text-[#333333] text-lg md:text-xl py-2 md:py-3"
+            >
+              Car Landing Page
+            </h1>
+            <div class="flex flex-col gap-1 mt-3 mb-5">
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-tag text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Category
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-dollar-sign text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Harga
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-info text-xs md:text-sm"></i>
+
+                <a
+                  href="./detail.html"
+                  class="font-normal text-[#333333] text-xs md:text-sm"
+                >
+                  Info Selengkapnya
+                </a>
+              </div>
+            </div>
+
+            <button
+              class="text-sm w-full mt-3 border-2 text-white border-[#333333] bg-[#333333] py-1 md:py-2 px-5 md:px-10 rounded-full hover:bg-white hover:text-[#333333] font-medium"
+            >
+              Pilih Template
+            </button>
+          </div>
+          <!-- End Product Card -->
+          <!-- Product Card -->
+          <div
+            class="flex flex-col w-full md:w-64 p-3 md:p-5 border border-transparent bg-white shadow-xl rounded-xl hover:border hover:border-green-300 hover:shadow-inner hover:transition-transform"
+          >
+            <div class="w-full md:h-44 items-center flex justify-center">
+              <img src="./asset/productimage.svg" class="w-full" />
+            </div>
+
+            <h1
+              class="font-semibold text-[#333333] text-lg md:text-xl py-2 md:py-3"
+            >
+              Car Landing Page
+            </h1>
+            <div class="flex flex-col gap-1 mt-3 mb-5">
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-tag text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Category
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-dollar-sign text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Harga
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-info text-xs md:text-sm"></i>
+
+                <a
+                  href="./detail.html"
+                  class="font-normal text-[#333333] text-xs md:text-sm"
+                >
+                  Info Selengkapnya
+                </a>
+              </div>
+            </div>
+
+            <button
+              class="text-sm w-full mt-3 border-2 text-white border-[#333333] bg-[#333333] py-1 md:py-2 px-5 md:px-10 rounded-full hover:bg-white hover:text-[#333333] font-medium"
+            >
+              Pilih Template
+            </button>
+          </div>
+          <!-- End Product Card -->
+          <!-- Product Card -->
+          <div
+            class="flex flex-col w-full md:w-64 p-3 md:p-5 border border-transparent bg-white shadow-xl rounded-xl hover:border hover:border-green-300 hover:shadow-inner hover:transition-transform"
+          >
+            <div class="w-full md:h-44 items-center flex justify-center">
+              <img src="./asset/productimage.svg" class="w-full" />
+            </div>
+
+            <h1
+              class="font-semibold text-[#333333] text-lg md:text-xl py-2 md:py-3"
+            >
+              Car Landing Page
+            </h1>
+            <div class="flex flex-col gap-1 mt-3 mb-5">
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-tag text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Category
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-dollar-sign text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Harga
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-info text-xs md:text-sm"></i>
+
+                <a
+                  href="./detail.html"
+                  class="font-normal text-[#333333] text-xs md:text-sm"
+                >
+                  Info Selengkapnya
+                </a>
+              </div>
+            </div>
+
+            <button
+              class="text-sm w-full mt-3 border-2 text-white border-[#333333] bg-[#333333] py-1 md:py-2 px-5 md:px-10 rounded-full hover:bg-white hover:text-[#333333] font-medium"
+            >
+              Pilih Template
+            </button>
+          </div>
+          <!-- End Product Card -->
+          <!-- Product Card -->
+          <div
+            class="flex flex-col w-full md:w-64 p-3 md:p-5 border border-transparent bg-white shadow-xl rounded-xl hover:border hover:border-green-300 hover:shadow-inner hover:transition-transform"
+          >
+            <div class="w-full md:h-44 items-center flex justify-center">
+              <img src="./asset/productimage.svg" class="w-full" />
+            </div>
+
+            <h1
+              class="font-semibold text-[#333333] text-lg md:text-xl py-2 md:py-3"
+            >
+              Car Landing Page
+            </h1>
+            <div class="flex flex-col gap-1 mt-3 mb-5">
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-tag text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Category
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-dollar-sign text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Harga
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-info text-xs md:text-sm"></i>
+
+                <a
+                  href="./detail.html"
+                  class="font-normal text-[#333333] text-xs md:text-sm"
+                >
+                  Info Selengkapnya
+                </a>
+              </div>
+            </div>
+
+            <button
+              class="text-sm w-full mt-3 border-2 text-white border-[#333333] bg-[#333333] py-1 md:py-2 px-5 md:px-10 rounded-full hover:bg-white hover:text-[#333333] font-medium"
+            >
+              Pilih Template
+            </button>
+          </div>
+          <!-- End Product Card -->
+          <!-- Product Card -->
+          <div
+            class="flex flex-col w-full md:w-64 p-3 md:p-5 border border-transparent bg-white shadow-xl rounded-xl hover:border hover:border-green-300 hover:shadow-inner hover:transition-transform"
+          >
+            <div class="w-full md:h-44 items-center flex justify-center">
+              <img src="./asset/productimage.svg" class="w-full" />
+            </div>
+
+            <h1
+              class="font-semibold text-[#333333] text-lg md:text-xl py-2 md:py-3"
+            >
+              Car Landing Page
+            </h1>
+            <div class="flex flex-col gap-1 mt-3 mb-5">
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-tag text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Category
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-dollar-sign text-xs md:text-sm"></i>
+                <p class="font-normal text-[#333333] text-xs md:text-sm">
+                  Harga
+                </p>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <i class="fa-solid fa-info text-xs md:text-sm"></i>
+
+                <a
+                  href="./detail.html"
+                  class="font-normal text-[#333333] text-xs md:text-sm"
+                >
+                  Info Selengkapnya
+                </a>
+              </div>
+            </div>
+
+            <button
+              class="text-sm w-full mt-3 border-2 text-white border-[#333333] bg-[#333333] py-1 md:py-2 px-5 md:px-10 rounded-full hover:bg-white hover:text-[#333333] font-medium"
+            >
+              Pilih Template
+            </button>
+          </div>
+          <!-- End Product Card -->
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#333333] p-4 md:p-20">
+      <div class="flex flex-col md:flex-row my-5 gap-3 md:gap-5">
+        <div class="w-full md:w-1/3">
+          <img src="./asset/logolight.svg" />
+          <p class="font-normal text-white text-base leading-tight py-5">
+            Tmplate programmer adalah sebuah bisnis dibidang jasa pembuatan
+            landing page yang terjangkau dengan keperluan membantu pelaku usaha
+            yang go digital. Part of programmer magang.
+          </p>
+          <div class="flex flex-row gap-5">
+            <i
+              class="border border-white rounded-full p-3 fa-brands fa-facebook-f text-white text-3xl"
+            ></i>
+            <i
+              class="border border-white rounded-full p-3 fa-brands fa-instagram text-white text-3xl"
+            ></i>
+            <i
+              class="border border-white rounded-full p-3 fa-brands fa-youtube text-white text-3xl"
+            ></i>
+          </div>
+        </div>
+
+        <div class="w-1/3">
+          <h1 class="font-medium text-white text-2xl">Quick Links</h1>
+          <ul class="text-white py-3 flex flex-col gap-3">
+            <li><a href="">Beranda</a></li>
+            <li><a href="">Produk Kami</a></li>
+            <li><a href="">Harga</a></li>
+            <li><a href="">Kontak Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/3">
+          <h1 class="font-medium text-white text-2xl">Contact Us</h1>
+          <ul class="text-white py-3 flex flex-col gap-3">
+            <li>
+              <a href=""
+                ><i class="fa-regular fa-envelope mr-2"></i>
+                programmermagang@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-location-dot mr-2"></i>Rajabasa, Bandar
+                Lampung, Lampung, Indonesia.</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-phone mr-2"></i>+6285156296066</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-[#333333]">
+      <hr class="w-full" />
+      <p
+        class="font-normal text-white text-base leading-tight py-5 text-center"
+      >
+        Ⓒ 2023 All rights reserved. Tmplate Programmer
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
