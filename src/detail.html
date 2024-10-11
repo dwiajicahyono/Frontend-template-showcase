@@ -14,12 +14,15 @@
     />
   </head>
   <body>
-    <div class="drawer px-0 md:px-20 bg-white shadow-lg fixed top-0 z-50">
+    <div class="drawer px-0 md:px-20 bg-white shadow-sm fixed top-0 z-50">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col">
         <!-- Navbar -->
-        <div class="navbar w-full">
-          <div class="flex-1">
+        <div class="navbar w-full flex items-center justify-between lg:px-8">
+          <!-- <div class="flex-1">
+            <img src="./asset/logo.svg" class="w-44 md:w-[214]" />
+          </div> -->
+          <div>
             <img src="./asset/logo.svg" class="w-44 md:w-[214]" />
           </div>
           <div class="hidden flex-none lg:block">
@@ -28,20 +31,46 @@
               <li
                 class="text-xl text-black font-extrabold cursor-pointer hover:text-[#30A9FE]"
               >
-                <a href="index.html">Beranda</a>
+                <a
+                  href="#home"
+                  class="text-sm font-semibold leading-6 text-gray-900"
+                  >Beranda</a
+                >
               </li>
               <li
-                class="text-xl text-black font-extrabold cursor-pointer hover:text-[#30A9FE]"
+                class="text-xl text-[#333333] opacity-50 font-bold cursor-pointer hover:text-[#30A9FE]"
               >
-                <a href="product.html">Produk</a>
+                <a
+                  href="#produk"
+                  class="text-sm font-semibold leading-6 text-gray-900"
+                  >Produk Kami</a
+                >
+              </li>
+              <li
+                class="text-xl text-[#333333] opacity-50 font-bold cursor-pointer hover:text-[#30A9FE]"
+              >
+                <a
+                  href="#harga"
+                  class="text-sm font-semibold leading-6 text-gray-900"
+                  >Harga</a
+                >
+              </li>
+              <li
+                class="text-xl text-[#333333] opacity-50 font-bold cursor-pointer hover:text-[#30A9FE]"
+              >
+                <a
+                  href="#testimoni"
+                  class="text-sm font-semibold leading-6 text-gray-900"
+                  >Testimoni</a
+                >
               </li>
             </ul>
-            <button
-              class="btn border-2 border-[#333333] bg-transparent rounded-full hover:bg-[#333333] hover:text-white"
-            >
-              Konsultasi
-            </button>
           </div>
+          <a
+            href="#"
+            class="text-sm font-semibold leading-6 text-gray-900 md:block hidden"
+            >Konsultasi <span aria-hidden="true">&rarr;</span></a
+          >
           <div class="flex-none lg:hidden">
             <label
               for="my-drawer-3"
@@ -76,82 +105,103 @@
           <li
             class="text-xl text-black font-extrabold cursor-pointer hover:text-[#30A9FE]"
           >
-            <a href="index.html">Beranda</a>
+            <a href="#home">Beranda</a>
+          </li>
+          <li
+            class="text-xl text-[#333333] opacity-50 font-bold cursor-pointer hover:text-[#30A9FE]"
+          >
+            <a href="#produk">Produk Kami</a>
+          </li>
+          <li
+            class="text-xl text-[#333333] opacity-50 font-bold cursor-pointer hover:text-[#30A9FE]"
+          >
+            <a href="#harga">Harga</a>
+          </li>
+          <li
+            class="text-xl text-[#333333] opacity-50 font-bold cursor-pointer hover:text-[#30A9FE]"
+          >
+            <a href="#testimoni">Testimoni</a>
+          </li>
+          <li
+            class="border-2 border-[#333333] bg-transparent py-1 px-3 md:px-5 rounded-full hover:bg-[#333333] hover:text-white font-medium md:font-semibold"
+          >
+            <a>Konsultasi</a>
           </li>
         </ul>
       </div>
     </div>
-    <main>
-      <section class="p-4 md:p-20 my-20 min-h-screen">
-        <h1
-          class="font-semibold text-[#333333] text-2xl md:text-4xl text-center"
-        >
-          Lading page para petarung baterai A2 dengan full power
-        </h1>
-        <div class="flex justify-center mt-10 mb-12 md:mt-32 md:mb-24">
-          <img src="./asset/detail.jpg" class="w-full md:w-6/12" />
+    <main class="flex-grow container mx-auto px-4 py-32">
+      <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Product Image and Gallery -->
+        <div class="lg:w-1/2 space-y-4">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://placehold.co/600x400"
+              alt="Minimalist Desk Lamp"
+              class="w-full h-auto object-cover"
+            />
+          </div>
         </div>
-        <p
-          class="font-normal text-[#333333] text-base leading-tight py-3 md:py-5 text-justify"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis
-          sagittis elit, vitae fringilla justo maximus ac. Praesent rutrum ante
-          dolor, ac placerat nibh pulvinar at. Fusce at gravida risus, id
-          pulvinar arcu. Etiam faucibus gravida massa ut tristique. Cras in
-          dictum libero. Suspendisse ultrices egestas leo eu molestie.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-          posuere cubilia curae; Nullam ornare at lacus non rhoncus. Fusce lorem
-          justo, blandit ac interdum at, varius vitae dui. Cras malesuada quam
-          ut sollicitudin convallis. Vestibulum tempus ultrices aliquet. Donec
-          ac placerat sapien. Nulla facilisi. Fusce sagittis tellus ut est
-          consectetur, at tristique sem dapibus. Donec congue cursus urna a
-          laoreet. Vivamus augue ipsum, laoreet sit amet lobortis ut, gravida
-          sit amet dolor. In convallis bibendum nisi, ut aliquet ipsum euismod
-          sit amet. Morbi eget mi vel urna semper pellentesque. Vestibulum
-          dapibus ex nisl, at pellentesque tellus placerat vitae. Vestibulum non
-          lacus in dolor pretium volutpat. Suspendisse quis nibh a elit eleifend
-          mollis a eu lorem. Vivamus vulputate, metus non faucibus egestas,
-          velit odio viverra nibh, vitae vulputate enim turpis eu risus.
-          Curabitur dolor mi, iaculis eget porta a, laoreet et ligula. Cras et
-          felis sapien. Proin tincidunt blandit est, ut bibendum mauris faucibus
-          fermentum. Etiam convallis aliquet suscipit. Ut lobortis eleifend
-          felis sit amet pellentesque. Quisque aliquet rutrum libero, sed
-          accumsan erat tincidunt non. Vivamus ornare odio eget dui venenatis,
-          vitae egestas arcu molestie. Duis fringilla tincidunt enim, nec
-          commodo nunc pulvinar ut. Aliquam erat volutpat. Suspendisse potenti.
-          Etiam sed sapien vitae urna maximus vestibulum. Orci varius natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Suspendisse egestas lobortis accumsan. Suspendisse potenti. Duis sem
-          quam, hendrerit eu molestie a, commodo cursus lorem. Nam mattis nisi
-          nec dui luctus imperdiet. Aliquam convallis tellus in semper
-          scelerisque. Vivamus fringilla et odio nec bibendum. Nulla gravida dui
-          a feugiat convallis. Phasellus congue tortor sed arcu pretium commodo.
-          Integer finibus id sapien tincidunt dictum. Nam sed ligula nec ligula
-          eleifend hendrerit id at diam. Phasellus ornare commodo tellus, a
-          luctus orci semper in. Nullam venenatis sollicitudin nunc quis
-          ultricies. Nam commodo vel arcu ac consequat. Aenean tristique iaculis
-          dui, id sodales ante sagittis eu. Ut posuere laoreet diam, elementum
-          varius sem fringilla fringilla. Etiam gravida neque sit amet turpis
-          cursus gravida. Ut vel lectus lectus. Fusce magna turpis, tempus at
-          sem sed, pulvinar auctor urna. Quisque pulvinar posuere lectus quis
-          consectetur. Aliquam vehicula fermentum lacus non sodales. Aenean at
-          quam euismod, pulvinar nisi vel, auctor lectus. Fusce non feugiat
-          felis. Etiam porttitor neque lorem, at vulputate erat suscipit vitae.
-          Duis ut eros vel justo egestas viverra a sed quam. Vestibulum
-          fermentum ullamcorper purus. Quisque posuere eu est in laoreet. Fusce
-          tellus erat, pharetra vel molestie id, ullamcorper a risus. Integer
-          nisi enim, tempor sit amet nulla vel, faucibus lobortis ante. Donec
-          volutpat tellus sed sem vulputate mollis eu sed ligula. Aenean gravida
-          tellus eget suscipit porta.
-        </p>
 
-        <div class="flex items-center justify-center mt-10 md:mt-28">
-          <a
-            class="kustom-neu px-5 py-3 bg-[#333333] hover:scale-105 text-white border border-[#333333] hover:bg-white hover:text-[#333333] hover:border-orange-400 rounded-2xl cursor-pointer"
-            >Pesan Sekarang</a
-          >
+        <!-- Product Details -->
+        <div class="lg:w-1/2 space-y-6">
+          <h1 class="text-4xl font-bold text-gray-800">Minimalist Desk Lamp</h1>
+          <div class="flex items-center space-x-4">
+            <p class="text-3xl font-bold text-indigo-600">$89.99</p>
+            <span class="text-sm text-gray-500 line-through">$119.99</span>
+            <span
+              class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-2 py-1 rounded"
+              >Save 25%</span
+            >
+          </div>
+
+          <p class="text-gray-600">
+            Elevate your workspace with our sleek and energy-efficient desk
+            lamp. Its minimalist design complements any modern interior while
+            providing optimal lighting for your tasks.
+          </p>
+          <div class="space-y-2">
+            <h2 class="text-xl font-semibold text-gray-800">Key Features:</h2>
+            <ul class="list-disc list-inside text-gray-600 space-y-1">
+              <li>Adjustable arm and head for precise lighting</li>
+              <li>Touch-sensitive controls with dimming function</li>
+              <li>Energy-efficient LED bulb included</li>
+              <li>Slim profile saves desk space</li>
+            </ul>
+          </div>
+          <div class="flex items-center space-x-4">
+            <a
+              class="border border-accent cursor-pointer text-accent hover:bg-accent hover:text-white font-semibold py-2 px-6 rounded-md transition-colors"
+            >
+              Pilih Template
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Recommended Products -->
+      <div class="mt-16">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">
+          You Might Also Like
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative">
+              <img
+                src="https://placehold.co/200x200"
+                alt="Modern Floor Lamp"
+                class="w-full h-48 object-cover transition-opacity"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg mb-2">Modern Floor Lamp</h3>
+              <div class="flex justify-between items-center">
+                <span class="text-accent font-semibold">$129.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="bg-[#333333] p-4 md:p-20">
       <div class="flex flex-col md:flex-row my-5 gap-3 md:gap-5">
